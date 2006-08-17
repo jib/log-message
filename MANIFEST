@@ -1,0 +1,10 @@
+lib/Log/Message/Config.pm
+lib/Log/Message/Handlers.pm
+lib/Log/Message/Item.pm
+lib/Log/Message.pm
+Makefile.PL
+README
+t/01_Log-Message-Config.t
+t/02_Log-Message.t
+t/conf/config_file
+t/conf/LoadMe.pl
