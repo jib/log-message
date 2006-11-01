@@ -8,7 +8,6 @@ BEGIN {
 
 BEGIN { chdir 't' if -d 't' }
 
-
 use strict;
 use lib qw[../lib to_load];
 use Test::More tests => 34;
@@ -147,13 +146,10 @@ for my $pkg ( qw[ Log::Message          Log::Message::Config
         my $warnings;
         local $SIG{__WARN__} = sub { $warnings .= "@_" };
     
-        ### XXX whitebox test!
-        local $Params::Check::VERBOSE = 1; # so the warnings are emitted
-    
         my $rv  = $log->retrieve( frobnitz => $$ );
         ok( !$rv,                       q[Retrieval with bogus args] );
         like( $warnings, qr/not a valid key/,   
-                                        qq[  Spotted the error] );
+                                        q[  Spotted the error] );
     }
 }    
 
