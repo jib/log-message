@@ -12,7 +12,6 @@ use strict;
 use lib qw[../lib conf];
 use Test::More tests => 6;
 use File::Spec;
-use File::Basename qw[dirname];
 
 use_ok( 'Log::Message::Config'    ) or diag "Config.pm not found.  Dying", die;
 use_ok( 'Log::Message'            ) or diag "Module.pm not found.  Dying", die;
@@ -58,7 +57,7 @@ use_ok( 'Log::Message'            ) or diag "Module.pm not found.  Dying", die;
     };
 
     my $log = Log::Message->new(
-                    config  => File::Spec->catfile( qw|conf config_file| )
+                    config  => File::Spec->catfile(qw|conf config_file|)
                 );
 
     is_deeply( $file, $log->{CONFIG}, q[Config creation from file] );
@@ -75,7 +74,7 @@ use_ok( 'Log::Message'            ) or diag "Module.pm not found.  Dying", die;
         level   => 'die',
     };
     my $log = Log::Message->new(
-                    config  => File::Spec->catfile( qw|conf config_file| ),
+                    config  => File::Spec->catfile(qw|conf config_file|),
                     tag     => 'MIXED',
                     level   => 'die',
                 );
