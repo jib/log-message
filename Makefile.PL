@@ -11,6 +11,7 @@ WriteMakefile (
                             'File::Spec'                => 0,   
                             'Locale::Maketext::Simple', => 0,     
                     },
+    INSTALLDIRS     => ( $] >= 5.009005 ? 'perl' : 'site' ),
     AUTHOR          => 'Jos Boumans <kane[at]cpan.org>',
 	ABSTRACT        => 'Powerful and flexible message logging mechanism',
 );   
