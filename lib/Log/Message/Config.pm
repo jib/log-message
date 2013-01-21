@@ -1,4 +1,5 @@
 package Log::Message::Config;
+use if $] > 5.017, 'deprecate';
 use strict;
 
 use Params::Check qw[check];

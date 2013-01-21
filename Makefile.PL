@@ -10,6 +10,7 @@ WriteMakefile (
                             'Module::Load'              => 0,
                             'File::Spec'                => 0,   
                             'Locale::Maketext::Simple', => 0,     
+                            'if'                        => 0,
                     },
     INSTALLDIRS     => ( $] >= 5.009005 && $] < 5.012 ? 'perl' : 'site' ),
     AUTHOR          => 'Jos Boumans <kane[at]cpan.org>',
