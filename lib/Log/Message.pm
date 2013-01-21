@@ -1,4 +1,5 @@
 package Log::Message;
+use if $] > 5.017, 'deprecate';
 
 use strict;
 

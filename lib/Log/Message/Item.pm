@@ -1,4 +1,5 @@
 package Log::Message::Item;
+use if $] > 5.017, 'deprecate';
 
 use strict;
 use vars qw[$VERSION];
