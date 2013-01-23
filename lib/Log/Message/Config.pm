@@ -9,7 +9,7 @@ use Locale::Maketext::Simple Style => 'gettext';
 
 BEGIN {
     use vars        qw[$VERSION $AUTOLOAD];
-    $VERSION    =   0.04;
+    $VERSION    =   '0.06';
 }
 
 sub new {

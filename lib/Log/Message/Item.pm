@@ -12,7 +12,7 @@ use Carp ();
 BEGIN {
     use vars qw[$AUTOLOAD $VERSION];
 
-    $VERSION    =   '0.04';
+    $VERSION    =   '0.06';
 }
 
 ### create a new item.
