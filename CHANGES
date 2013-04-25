@@ -1,3 +1,8 @@
+Changes for 0.08    Thu Apr 25 23:20:08 BST 2013
+=================================================
+* Open configuration file for reading only. RT#84844
+  (Petr Pisar)
+
 Changes for 0.06    Wed Jan 23 12:21:48 GMT 2013
 =================================================
 * Add deprecate usage to warn if module is loaded

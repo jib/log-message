@@ -12,7 +12,7 @@ local $Params::Check::VERBOSE = 1;
 
 BEGIN {
     use vars        qw[$VERSION @ISA $STACK $CONFIG];
-    $VERSION    =   '0.06';
+    $VERSION    =   '0.08';
     $STACK      =   [];
 }
 
